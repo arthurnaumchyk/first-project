@@ -10,11 +10,12 @@ body {
 
 .header {
     width: 1298px;
+    display: flex;
+    justify-content: space-between;
+
     margin: 0 auto;
     margin-top: 30px;
     margin-bottom: 50px;
-    display: flex;
-    justify-content: space-between;
 }
 
 .navigation__list {
@@ -54,13 +55,15 @@ body {
 .banner {
     width: 1296px;
     height: 600px;
+    padding-top: 150px;
+
     margin: 0 auto;
 }
 
 .banner--background {
     background-image: url("../img/baner_bg.png");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     border-radius: 10px;
 }
 
@@ -70,15 +73,14 @@ body {
     text-align: center;
 }
 
-.title--white {
-    text-align: center;
-    margin-bottom: 40px;
-}
-
 .title {
     font-weight: 700;
     font-size: 24px;
     line-height: 34px;
+    text-align: center;
+
+    margin: 0 auto;
+    margin-bottom: 100px;
 }
 
 .title::before {
@@ -93,6 +95,11 @@ body {
     height: 14px;
     border-radius: 0 50px 0 50px;
     background-color: #018ABE;
+}
+
+.title--white {
+    text-align: center;
+    margin-bottom: 40px;
 }
 
 .title--white::before {
