@@ -37,14 +37,17 @@ body {
 .button {
     font-size: 13px;
     line-height: 18px;
+    border-radius: 5px;
     color: #018ABE;
     background-color: #FFFFFF;
+    border-color: #FFFFFF;
+    padding: 9px 15px;
 }
 
 .button--blue {
     color: #FFFFFF;
     background-color: #018ABE;
-    border-radius: 10px;
+    border-color: #018ABE;
     padding: 9px 15px;
 
     margin: 0;
@@ -84,16 +87,22 @@ body {
 }
 
 .title::before {
+    content: "";
+    display: inline-block;
+    margin-right: 45px;
     width: 28px;
     height: 14px;
-    border-radius: 50px 0 50px 0;
+    border-radius: 0 50px 0 50px;
     background-color: #018ABE;
 }
 
 .title::after {
+    content: "";
+    display: inline-block;
+    margin-left: 45px;
     width: 28px;
     height: 14px;
-    border-radius: 0 50px 0 50px;
+    border-radius: 50px 0 50px 0;
     background-color: #018ABE;
 }
 
@@ -113,7 +122,7 @@ body {
 .sessions-list {
     width: 1296px;
     display: grid;
-    grid-template-rows: repeat(auto-fit, minmax(254px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(258px, 2fr));
     grid-template-columns: repeat(auto-fit, minmax(416px, 1fr));
     gap: 24px;
     grid-template-areas: "standart for-couples underwater"
@@ -156,10 +165,27 @@ body {
     text-decoration: none;
 }
 
+.article {
+    display: flex;
+    width: 1076px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+
+.article__img {
+    margin-left: 84px;
+}
+
+.article__img--reverse {
+    margin-left: 0;
+    margin-right: 84px;
+}
+
 .article__title {
     font-weight: 700;
     font-size: 24px;
     line-height: 140%;
+    margin-bottom: 30px;
 }
 
 .article__text {
@@ -167,9 +193,40 @@ body {
     line-height: 140%;
 }
 
+.pricelist {
+    display: flex;
+    width: 1076px;
+    justify-content: space-between;
+
+    margin: 0 auto;
+    margin-bottom: 150px;
+}
+
+.pricelist__roster {
+    margin-top: 50px;
+}
+
+.pricelist__item {
+    display: flex;
+    justify-content: space-between;
+}
+
 .pricelist__title {
+    display: block;
+    margin-right: 23px;
+    margin-bottom: 31px;
     font-size: 18px;
     line-height: 25px;
+}
+
+.pricelist__title::before {
+    content: "";
+    display: inline-block;
+    margin-right: 20px;
+    width: 18px;
+    height: 9px;
+    border-radius: 0 50px 0 50px;
+    background-color: #018ABE;
 }
 
 .pricelist__text {
@@ -178,28 +235,67 @@ body {
     line-height: 25px;
 }
 
+.gift-certificate__img {
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
 .gift-certificate__text {
     font-weight: 700;
     font-size: 21px;
     line-height: 29px;
+    text-align: center;
 }
 
-.location-info {
+.location {
+    display: flex;
+    width: 1296px;
+
+    margin: 0 auto;
+}
+
+.location-info__content {
+    border-radius: 10px;
     background-color: #018ABE;
+    padding: 35px 45px;
+
+    margin-left: 48px;
+    margin-bottom: 24px;
 }
 
 .location-info__title {
     font-size: 24px;
     line-height: 34px;
+
+    margin-bottom: 21px;
 }
 
 .location-info__list {
     list-style: none;
+    margin: 0;
+    padding: 0;
+
+    margin-bottom: 30px;
+}
+
+.location-info__item {
+    display: flex;
+    align-items: center;
+    margin: 0;
 }
 
 .location-info__text {
     font-size: 14px;
     line-height: 19px;
+
+    margin-left: 20px;
+}
+
+.footer {
+    width: 1296px;
+
+    margin: 0 auto;
+    margin-top: 90px;
 }
 
 .copyright__link {
