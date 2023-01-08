@@ -1,3 +1,51 @@
-h1 {
-    color: aqua;
+.header {
+    padding-bottom: 30px;
+    border-bottom: 1px solid #FFFFFF;
+
+    margin-bottom: 60px;
+}
+
+.title {
+    margin-bottom: 60px;
+}
+
+.newsline {
+    display: grid;
+    width: 1296px;
+    gap: 24px;
+    grid-template-columns: repeat(auto-fit, minmax(416px, 1fr));
+    grid-template-rows: 258px 258px;
+
+    margin: 0 auto;
+    margin-bottom: 120px;
+}
+
+.newsline__item {
+    padding: 30px 35px;
+}
+
+.newsline__item--background {
+    background-image: url(../img/about_decor.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.newsline__date {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19px;
+    padding: 6px 12px;
+    border-radius: 5px;
+    background-color: #018ABE;
+}
+
+.newsline__title {
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 29px;
+}
+
+.footer {
+    padding-top: 30px;
+    border-top: 1px solid #FFFFFF;
 }

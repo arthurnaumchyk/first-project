@@ -122,7 +122,7 @@ body {
 .sessions-list {
     width: 1296px;
     display: grid;
-    grid-template-rows: repeat(auto-fit, minmax(258px, 2fr));
+    grid-template-rows: repeat(auto-fit, minmax(258px, 1fr));
     grid-template-columns: repeat(auto-fit, minmax(416px, 1fr));
     gap: 24px;
     grid-template-areas: "standart for-couples underwater"
