@@ -133,6 +133,9 @@ body {
 }
 
 .sessions-list__type {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
     padding: 30px 40px;
     border-radius: 10px;
 }
