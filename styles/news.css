@@ -27,7 +27,21 @@
 .newsline__item--background {
     background-image: url(../img/about_decor.png);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
+    border-radius: 10px;
+    position: relative;
+}
+
+.newsline__item--background::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(1, 138, 190, 0.5);
+    ;
+    border-radius: 10px;
 }
 
 .newsline__date {
@@ -37,12 +51,14 @@
     padding: 6px 12px;
     border-radius: 5px;
     background-color: #018ABE;
+    position: relative;
 }
 
 .newsline__title {
     font-weight: 700;
     font-size: 21px;
     line-height: 29px;
+    position: relative;
 }
 
 .footer {
