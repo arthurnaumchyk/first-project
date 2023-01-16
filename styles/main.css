@@ -122,7 +122,7 @@ body {
 .sessions-list {
     width: 1296px;
     display: grid;
-    grid-template-rows: repeat(auto-fit, minmax(258px, 1fr));
+    grid-template-rows: 258px 258px;
     grid-template-columns: repeat(auto-fit, minmax(416px, 1fr));
     gap: 24px;
     grid-template-areas: "standart for-couples underwater"
@@ -130,6 +130,11 @@ body {
                          
     margin: 0 auto;
     margin-bottom: 150px;                     
+}
+
+.sessions-list__type {
+    padding: 30px 40px;
+    border-radius: 10px;
 }
 
 .sessions-list--area_standart {
@@ -155,9 +160,28 @@ body {
 .sessions-list__type--background {
     background-image: url(../img/about_decor.png);
     background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.sessions-list__type--background::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(1, 138, 190, 0.5);
+    ;
+    border-radius: 10px;
+  }
+
+.session-list__type--active {
+    border-bottom: 7px solid #018ABE;
 }
 
 .sessions-list__link {
+    position: relative;
     font-weight: 700;
     font-size: 24px;
     line-height: 34px;
